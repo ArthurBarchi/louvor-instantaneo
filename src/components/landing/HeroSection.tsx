@@ -9,12 +9,12 @@ const HeroSection = () => {
       <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent pointer-events-none" />
       
       <div className="container max-w-lg mx-auto relative">
-        {/* Main Headline - Now BEFORE the image */}
+        {/* Main Headline */}
         <div className="text-center mb-6">
           <h1 className="text-3xl md:text-4xl font-black text-foreground leading-tight mb-2">
             1.500 Playbacks Para
             <br />
-            <span className="text-gradient">Louvar Na Igreja</span>
+            <span className="text-gradient">Alabar En La Iglesia</span>
           </h1>
           
           {/* Countdown Badge */}
@@ -23,26 +23,26 @@ const HeroSection = () => {
           </div>
         </div>
 
-        {/* Hero Image - Now AFTER the headline */}
+        {/* Hero Image */}
         <div className="mb-6 animate-fade-in">
           <img 
             src={heroImage} 
-            alt="Playbacks Gospel - Mais de 1500 hinos" 
+            alt="Playbacks Gospel - Más de 1500 himnos" 
             className="w-full rounded-2xl"
           />
         </div>
 
         {/* Value Proposition */}
         <p className="text-center text-foreground text-lg font-black leading-relaxed mb-6">
-          CHEGA de dor de cabeça baixando playbacks ruins do YouTube ou gastando com CD. Baixe{" "}
-          <span className="text-amber-500">HOJE MESMO</span> direto pro pendrive, de forma <span className="text-amber-500">SIMPLES</span> e <span className="text-amber-500">PRÁTICA</span>.
+          BASTA de dolores de cabeza descargando playbacks malos de YouTube o gastando en CDs. Descárgalos{" "}
+          <span className="text-amber-500">HOY MISMO</span> directo a tu USB, de forma <span className="text-amber-500">SIMPLE</span> y <span className="text-amber-500">PRÁCTICA</span>.
         </p>
 
         {/* Price */}
         <div className="text-center mb-6">
           <p className="text-2xl font-black text-foreground">
-            TUDO POR APENAS{" "}
-            <span className="text-gradient text-4xl">R$ 10,00</span>
+            TODO POR SOLO{" "}
+            <span className="text-gradient text-4xl">$10</span>
           </p>
         </div>
 
@@ -52,7 +52,7 @@ const HeroSection = () => {
             href="#pricing" 
             className="btn-gradient w-full flex items-center justify-center text-lg"
           >
-            SIM, QUERO AGORA
+            SÍ, ¡LO QUIERO AHORA!
           </a>
         </div>
 
@@ -64,11 +64,11 @@ const HeroSection = () => {
           </div>
           <div className="flex items-center gap-1.5 text-xs">
             <Shield className="w-4 h-4 text-success" />
-            <span>Garantia 7 dias</span>
+            <span>Garantía 7 días</span>
           </div>
           <div className="flex items-center gap-1.5 text-xs">
             <CreditCard className="w-4 h-4 text-success" />
-            <span>Pix ou Cartão</span>
+            <span>Tarjeta o Transferencia</span>
           </div>
         </div>
       </div>

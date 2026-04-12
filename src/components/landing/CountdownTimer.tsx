@@ -13,8 +13,8 @@ const CountdownTimer = ({ variant = "badge" }: CountdownTimerProps) => {
     const formatDate = () => {
       const now = new Date();
       const months = [
-        "janeiro", "fevereiro", "março", "abril", "maio", "junho",
-        "julho", "agosto", "setembro", "outubro", "novembro", "dezembro"
+        "enero", "febrero", "marzo", "abril", "mayo", "junio",
+        "julio", "agosto", "septiembre", "octubre", "noviembre", "diciembre"
       ];
       return `${now.getDate()} de ${months[now.getMonth()]}`;
     };
@@ -50,7 +50,7 @@ const CountdownTimer = ({ variant = "badge" }: CountdownTimerProps) => {
     return (
       <div className="inline-flex items-center gap-2 bg-red-600 text-white px-4 py-2 rounded-full text-sm font-bold animate-pulse">
         <Clock className="w-4 h-4" />
-        <span>Promoção válida só hoje {currentDate}!</span>
+        <span>¡Promoción válida solo hoy {currentDate}!</span>
       </div>
     );
   }
@@ -60,18 +60,18 @@ const CountdownTimer = ({ variant = "badge" }: CountdownTimerProps) => {
       {/* Badge */}
       <div className="flex justify-center mb-4">
         <span className="bg-red-600 text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
-          Oferta por tempo limitado
+          Oferta por tiempo limitado
         </span>
       </div>
 
       {/* Title */}
       <h3 className="text-center text-xl font-black text-foreground mb-2">
-        Promoção válida apenas hoje
+        Promoción válida solo hoy
       </h3>
 
       {/* Subtitle */}
       <p className="text-center text-sm text-muted-foreground mb-4">
-        {currentDate} • Termina à meia-noite
+        {currentDate} • Termina a medianoche
       </p>
 
       {/* Countdown Boxes */}
@@ -94,7 +94,7 @@ const CountdownTimer = ({ variant = "badge" }: CountdownTimerProps) => {
 
       {/* Urgency Text */}
       <p className="text-center text-xs text-muted-foreground">
-        Após esse prazo, o preço volta ao normal
+        Después de este plazo, el precio vuelve al normal
       </p>
     </div>
   );

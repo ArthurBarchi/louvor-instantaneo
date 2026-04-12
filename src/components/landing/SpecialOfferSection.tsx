@@ -6,23 +6,23 @@ const SpecialOfferSection = () => {
   const bonuses = [
     {
       icon: BookOpen,
-      title: "Ebook: A Voz do Louvor",
-      description: "O Guia Prático Para Cantar Melhor na Igreja",
+      title: "Ebook: La Voz de la Alabanza",
+      description: "La Guía Práctica Para Cantar Mejor en la Iglesia",
     },
     {
       icon: Music,
       title: "Multitracks Gospel",
-      description: "Arquivos com instrumentos separados para ensaiar como um profissional.",
+      description: "Archivos con instrumentos separados para ensayar como un profesional.",
     },
     {
       icon: FileText,
       title: "5.000 Partituras Gospel",
-      description: "Uma biblioteca digital para músicos e ministérios.",
+      description: "Una biblioteca digital para músicos y ministerios.",
     },
     {
       icon: Volume2,
-      title: "Músicas de Fundo para Oração",
-      description: "Instrumentais gospel perfeitos para momentos de oração e pregação.",
+      title: "Música de Fondo para Oración",
+      description: "Instrumentales gospel perfectos para momentos de oración y predicación.",
     },
   ];
 
@@ -35,7 +35,7 @@ const SpecialOfferSection = () => {
             OFERTA ESPECIAL
           </p>
           <h2 className="text-2xl font-black text-white">
-            SOMENTE HOJE:
+            SOLO POR HOY:
           </h2>
         </div>
 
@@ -46,17 +46,17 @@ const SpecialOfferSection = () => {
         <div className="card-elevated p-6 mb-6">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Gift className="w-6 h-6 text-primary animate-pulse" />
-            <span className="text-xl font-black text-foreground">Plano Completo</span>
+            <span className="text-xl font-black text-foreground">Plan Completo</span>
           </div>
           <p className="text-center text-lg font-bold text-primary mb-4">
-            +4 BÔNUS EXCLUSIVOS
+            +4 BONOS EXCLUSIVOS
           </p>
           
           {/* Ebook Image */}
           <div className="flex justify-center mb-6">
           <img 
             src={bonusEbook} 
-            alt="Pacote de Bônus - Playbacks Gospel" 
+            alt="Paquete de Bonos - Playbacks Gospel" 
             className="w-full max-w-xs h-auto drop-shadow-lg"
           />
           </div>
@@ -82,7 +82,7 @@ const SpecialOfferSection = () => {
           href="#pricing" 
           className="btn-gradient w-full flex items-center justify-center text-lg animate-stretch"
         >
-          🔥 QUERO AGORA! 🔥
+          🔥 ¡LO QUIERO AHORA! 🔥
         </a>
       </div>
     </section>

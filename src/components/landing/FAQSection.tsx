@@ -8,24 +8,24 @@ import {
 const FAQSection = () => {
   const faqs = [
     {
-      question: "Como recebo o acesso?",
-      answer: "Após a confirmação do pagamento, você recebe automaticamente um e-mail com o link para acessar todos os materiais. O acesso é imediato e vitalício!",
+      question: "¿Cómo recibo el acceso?",
+      answer: "Después de la confirmación del pago, recibes automáticamente un correo electrónico con el enlace para acceder a todos los materiales. ¡El acceso es inmediato y de por vida!",
     },
     {
-      question: "Posso usar no celular e no computador?",
-      answer: "Sim! Você pode baixar os playbacks em qualquer dispositivo - celular, computador, tablet. E depois transferir para pendrive ou CD para usar na igreja.",
+      question: "¿Puedo usarlo en el celular y en la computadora?",
+      answer: "¡Sí! Puedes descargar los playbacks en cualquier dispositivo: celular, computadora, tablet. Y después transferirlos a un USB o CD para usar en la iglesia.",
     },
     {
-      question: "Os playbacks são de boa qualidade?",
-      answer: "Todos os playbacks foram selecionados e testados para garantir máxima qualidade sonora. São arquivos em MP3 de alta definição, prontos para uso profissional.",
+      question: "¿Los playbacks son de buena calidad?",
+      answer: "Todos los playbacks fueron seleccionados y probados para garantizar la máxima calidad de sonido. Son archivos en MP3 de alta definición, listos para uso profesional.",
     },
     {
-      question: "Posso gravar em um CD ou em um Pendrive?",
-      answer: "Sim! Após baixar os arquivos, você pode gravá-los em CDs, pendrives ou qualquer outro dispositivo de armazenamento para usar onde preferir.",
+      question: "¿Puedo grabarlos en un CD o en un USB?",
+      answer: "¡Sí! Después de descargar los archivos, puedes grabarlos en CDs, USBs o cualquier otro dispositivo de almacenamiento para usar donde prefieras.",
     },
     {
-      question: "A compra é segura?",
-      answer: "100% segura! Utilizamos o Mercado Pago, uma das plataformas de pagamento mais confiáveis do Brasil. Seus dados são criptografados e protegidos.",
+      question: "¿La compra es segura?",
+      answer: "¡100% segura! Utilizamos plataformas de pago confiables. Tus datos están encriptados y protegidos.",
     },
   ];
 
@@ -35,7 +35,7 @@ const FAQSection = () => {
         {/* Section Title */}
         <div className="text-center mb-8">
           <h2 className="text-2xl font-black text-foreground">
-            Perguntas Frequentes
+            Preguntas Frecuentes
           </h2>
         </div>
 
