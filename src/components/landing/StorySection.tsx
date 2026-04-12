@@ -14,7 +14,7 @@ const StorySection = () => {
       iconBg: "bg-gradient-to-br from-rose-400 to-red-500",
       iconColor: "text-white",
       title: "Una Misión Que Nació en Casa",
-      content: "Desde pequeño, veía la misma lucha: mi mamá alababa en la iglesia, pero siempre enfrentaba la dificultad de encontrar playbacks de calidad.",
+      content: "Desde pequeño, veía la misma lucha: mi mamá cantaba en la iglesia, pero siempre enfrentaba la dificultad de encontrar playbacks de calidad.",
       hasList: false,
     },
     {
@@ -30,7 +30,7 @@ const StorySection = () => {
       iconBg: "bg-gradient-to-br from-sky-400 to-blue-500",
       iconColor: "text-white",
       title: "La Solución Que Construimos Juntos",
-      content: "Fue cuando tuve una visión: ¿y si pudiéramos reunir miles de playbacks de alta calidad en un solo lugar? Entonces reuní un equipo apasionado por la adoración y trabajamos por meses construyendo Estudio Gospel, organizando y probando cada archivo para garantizar la máxima calidad.",
+      content: "Fue cuando tuve una idea: ¿y si pudiéramos reunir miles de playbacks de alta calidad en un solo lugar? Reuní un equipo apasionado por la adoración y trabajamos por meses construyendo Estudio Alabanza, organizando y probando cada archivo para asegurar la mejor calidad.",
       hasList: false,
     },
     {
@@ -38,7 +38,7 @@ const StorySection = () => {
       iconBg: "bg-gradient-to-br from-violet-400 to-purple-500",
       iconColor: "text-white",
       title: "¿Por Qué Solo $10?",
-      content: "Muchos me preguntan por qué es tan barato. La respuesta es simple. Este valor simbólico cubre nuestros costos y nos permite seguir ayudando. Nuestra misión no es ganar dinero. Es facilitar la alabanza en miles de iglesias en toda Latinoamérica.",
+      content: "Muchos me preguntan por qué es tan barato. La respuesta es simple: este valor simbólico cubre nuestros costos y nos permite seguir ayudando. Nuestra misión no es ganar dinero, sino facilitar la alabanza en miles de iglesias en toda Latinoamérica.",
       hasList: false,
     },
   ];
@@ -46,7 +46,6 @@ const StorySection = () => {
   return (
     <section className="py-16 px-4 bg-gradient-to-b from-secondary via-secondary to-background">
       <div className="container max-w-lg mx-auto">
-        {/* Section Title */}
         <div className="text-center mb-10">
           <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-primary/20 to-primary/5 mb-4">
             <Heart className="w-8 h-8 text-primary" />
@@ -62,7 +61,6 @@ const StorySection = () => {
           </p>
         </div>
 
-        {/* Story Cards */}
         <div className="space-y-5">
           {storyCards.map((card, index) => (
             <div 
@@ -101,11 +99,10 @@ const StorySection = () => {
           ))}
         </div>
 
-        {/* Mission Statement */}
         <div className="mt-10 text-center">
           <div className="bg-gradient-to-r from-primary/5 via-primary/10 to-primary/5 rounded-2xl p-6 mb-6 border border-primary/20">
             <p className="text-foreground font-semibold italic text-lg leading-relaxed">
-              "Este proyecto fue hecho pensando en ti, que enfrentas la misma dificultad."
+              "Este proyecto fue pensado para ti, que enfrenta la misma dificultad."
             </p>
           </div>
           

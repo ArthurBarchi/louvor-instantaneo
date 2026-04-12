@@ -12,20 +12,18 @@ const TestimonialsSection = () => {
   return (
     <section className="py-12 px-4 bg-secondary">
       <div className="container max-w-lg mx-auto">
-        {/* Section Title */}
         <div className="text-center mb-8">
           <h2 className="text-2xl font-black text-foreground mb-1">
-            MIRA LO QUE OPINAN
+            MIRA LO QUE DICEN
           </h2>
           <p className="text-2xl font-black text-gradient">
-            DE LOS PLAYBACKS
+            NUESTROS USUARIOS
           </p>
           <p className="text-sm text-muted-foreground mt-2">
             Testimonios de Ministerios Transformados
           </p>
         </div>
 
-        {/* WhatsApp Testimonials Image */}
         <div className="mb-8">
           <img 
             src={whatsappTestimonials} 
@@ -34,7 +32,6 @@ const TestimonialsSection = () => {
           />
         </div>
 
-        {/* Social Proof */}
         <div className="bg-card rounded-2xl p-6 shadow-sm mb-6">
           <p className="text-center text-foreground font-semibold mb-6">
             ¡Únete a Miles de Ministerios Satisfechos!
@@ -54,7 +51,6 @@ const TestimonialsSection = () => {
           </div>
         </div>
 
-        {/* Star Rating Display */}
         <div className="flex items-center justify-center gap-1 mb-2">
           {[...Array(5)].map((_, i) => (
             <Star key={i} className="w-6 h-6 fill-primary text-primary" />

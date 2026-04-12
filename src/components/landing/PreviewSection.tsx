@@ -17,17 +17,15 @@ const PreviewSection = () => {
   return (
     <section className="py-12 px-4 bg-secondary">
       <div className="container max-w-lg mx-auto">
-        {/* Section Title */}
         <div className="text-center mb-8">
           <h2 className="text-2xl font-black text-foreground mb-1">
-            MIRA LO QUE
+            MIRA TODO LO
           </h2>
           <p className="text-2xl font-black text-gradient">
-            RECIBES EN LA PRÁCTICA
+            QUE RECIBES:
           </p>
         </div>
 
-        {/* Mockup Image */}
         <div className="mb-8">
           <img 
             src={mockupDevices} 
@@ -36,7 +34,6 @@ const PreviewSection = () => {
           />
         </div>
 
-        {/* Stats */}
         <div className="grid grid-cols-3 gap-4 mb-8">
           {stats.map((stat, index) => (
             <div 
@@ -50,7 +47,6 @@ const PreviewSection = () => {
           ))}
         </div>
 
-        {/* Steps */}
         <div className="flex items-center justify-between gap-2">
           {steps.map((step, index) => (
             <div key={index} className="flex flex-col items-center text-center">
