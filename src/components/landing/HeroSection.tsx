@@ -5,40 +5,34 @@ import CountdownTimer from "./CountdownTimer";
 const HeroSection = () => {
   return (
     <section className="relative bg-background pt-8 pb-12 px-4 overflow-hidden">
-      {/* Subtle background gradient */}
       <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent pointer-events-none" />
       
       <div className="container max-w-lg mx-auto relative">
-        {/* Main Headline */}
         <div className="text-center mb-6">
           <h1 className="text-3xl md:text-4xl font-black text-foreground leading-tight mb-2">
             1.500 Playbacks Para
             <br />
-            <span className="text-gradient">Alabar En La Iglesia</span>
+            <span className="text-gradient">Alabar En Tu Iglesia</span>
           </h1>
           
-          {/* Countdown Badge */}
           <div className="mt-4">
             <CountdownTimer variant="badge" />
           </div>
         </div>
 
-        {/* Hero Image */}
         <div className="mb-6 animate-fade-in">
           <img 
             src={heroImage} 
-            alt="Playbacks Gospel - Más de 1500 himnos" 
+            alt="Playbacks Cristianos - Más de 1500 himnos de alabanza" 
             className="w-full rounded-2xl"
           />
         </div>
 
-        {/* Value Proposition */}
         <p className="text-center text-foreground text-lg font-black leading-relaxed mb-6">
-          BASTA de dolores de cabeza descargando playbacks malos de YouTube o gastando en CDs. Descárgalos{" "}
-          <span className="text-amber-500">HOY MISMO</span> directo a tu USB, de forma <span className="text-amber-500">SIMPLE</span> y <span className="text-amber-500">PRÁCTICA</span>.
+          DEJA de perder tiempo buscando playbacks malos en YouTube o gastando en CDs. Descárgalos{" "}
+          <span className="text-amber-500">AL INSTANTE</span> y úsalos en tu iglesia, USB o donde quieras. <span className="text-amber-500">FÁCIL</span> y <span className="text-amber-500">RÁPIDO</span>.
         </p>
 
-        {/* Price */}
         <div className="text-center mb-6">
           <p className="text-2xl font-black text-foreground">
             TODO POR SOLO{" "}
@@ -46,7 +40,6 @@ const HeroSection = () => {
           </p>
         </div>
 
-        {/* CTA Button */}
         <div className="mb-6">
           <a 
             href="#pricing" 
@@ -56,7 +49,6 @@ const HeroSection = () => {
           </a>
         </div>
 
-        {/* Trust Badges */}
         <div className="flex items-center justify-center gap-6 text-muted-foreground">
           <div className="flex items-center gap-1.5 text-xs">
             <Lock className="w-4 h-4 text-success" />

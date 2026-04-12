@@ -42,7 +42,6 @@ const PricingSection = () => {
   return (
     <section id="pricing" className="section-dark py-12 px-4">
       <div className="container max-w-lg mx-auto">
-        {/* Section Title */}
         <div className="text-center mb-8">
           <h2 className="text-2xl font-black text-white mb-1">
             TRANSFORMA TU
@@ -51,10 +50,9 @@ const PricingSection = () => {
             ¡ALABANZA AHORA!
           </p>
           
-          {/* Scarcity Element */}
           <div className="bg-white/5 border border-amber-500/30 rounded-xl p-4 max-w-sm mx-auto">
             <p className="text-sm font-bold text-white mb-3">
-              Solo quedan <span className="text-amber-500">{remainingSlots} lugares</span> para el producto esta semana
+              Solo quedan <span className="text-amber-500">{remainingSlots} lugares</span> disponibles esta semana
             </p>
             <div className="relative w-full bg-white/10 rounded-full h-5 overflow-hidden">
               <div 
@@ -69,9 +67,8 @@ const PricingSection = () => {
           </div>
         </div>
 
-        {/* Pricing Cards */}
         <div className="space-y-6">
-          {/* Basic Package */}
+          {/* Paquete Básico */}
           <div className="bg-background rounded-2xl p-6 border-2 border-success">
             <div className="text-center mb-6">
               <h3 className="text-xl font-black text-foreground">
@@ -91,7 +88,7 @@ const PricingSection = () => {
             <ul className="space-y-3 mb-6">
               <li className="flex items-center gap-3 text-sm text-foreground">
                 <Check className="w-5 h-5 text-success flex-shrink-0" />
-                1.500 Playbacks Gospel
+                1.500 Playbacks Cristianos
               </li>
               <li className="flex items-center gap-3 text-sm text-foreground">
                 <Check className="w-5 h-5 text-success flex-shrink-0" />
@@ -113,9 +110,8 @@ const PricingSection = () => {
             </p>
           </div>
 
-          {/* Complete Package */}
+          {/* Paquete Completo */}
           <div className="card-featured p-6 relative">
-            {/* Featured Badge */}
             <div className="absolute -top-3 left-1/2 -translate-x-1/2">
               <span className="badge-featured flex items-center gap-1">
                 <Star className="w-3 h-3" /> MÁS VENDIDO
@@ -137,14 +133,12 @@ const PricingSection = () => {
               </p>
             </div>
 
-            {/* Todo del Paquete Básico */}
             <div className="bg-success/10 border border-success/30 rounded-xl py-3 px-4 mb-4">
               <p className="text-center text-success font-bold text-sm">
                 TODO DEL PAQUETE BÁSICO +
               </p>
             </div>
 
-            {/* Bonus Cards */}
             <div className="space-y-3 mb-6">
               <div className="bg-primary/5 border border-primary/20 rounded-xl p-4">
                 <div className="flex items-start gap-3">
@@ -161,7 +155,7 @@ const PricingSection = () => {
                   <Gift className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="text-xs font-bold text-primary">BONO 2</p>
-                    <p className="text-sm font-semibold text-foreground">Multitracks Gospel</p>
+                    <p className="text-sm font-semibold text-foreground">Multitracks de Adoración</p>
                   </div>
                 </div>
               </div>
@@ -171,7 +165,7 @@ const PricingSection = () => {
                   <Gift className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" />
                   <div>
                     <p className="text-xs font-bold text-primary">BONO 3</p>
-                    <p className="text-sm font-semibold text-foreground">5.000 Partituras Gospel</p>
+                    <p className="text-sm font-semibold text-foreground">5.000 Partituras Cristianas</p>
                   </div>
                 </div>
               </div>
@@ -202,7 +196,6 @@ const PricingSection = () => {
           </div>
         </div>
 
-        {/* Countdown Timer */}
         <div className="mt-8 text-center">
           <p className="text-white/80 text-sm mb-3">El descuento termina en:</p>
           <div className="flex items-center justify-center gap-2">
@@ -226,7 +219,6 @@ const PricingSection = () => {
           </div>
         </div>
 
-        {/* Payment Methods */}
         <div className="mt-8 flex items-center justify-center gap-4 opacity-60">
           <img src="https://logospng.org/download/visa/logo-visa-1024.png" alt="Visa" className="h-6 object-contain invert" />
           <img src="https://logospng.org/download/mastercard/logo-mastercard-1024.png" alt="Mastercard" className="h-8 object-contain" />

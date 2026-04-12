@@ -10,7 +10,7 @@ const GuaranteeSection = () => {
     {
       icon: Cloud,
       title: "Almacenamiento Seguro",
-      description: "Todo el material está alojado en Google Drive, garantizando que tus archivos estén siempre disponibles y protegidos.",
+      description: "Todo el material está alojado en Google Drive, para que tus archivos estén siempre disponibles y protegidos.",
     },
     {
       icon: Lock,
@@ -20,25 +20,23 @@ const GuaranteeSection = () => {
     {
       icon: CheckCircle,
       title: "Satisfacción Garantizada",
-      description: "Si dentro de 7 días no estás satisfecho, te devolvemos el 100% de tu dinero. Sin preguntas, sin complicaciones.",
+      description: "Si dentro de 7 días no quedas satisfecho, te devolvemos el 100% de tu dinero. Sin preguntas, sin complicaciones.",
     },
   ];
 
   return (
     <section className="py-12 px-4 bg-background">
       <div className="container max-w-lg mx-auto">
-        {/* Guarantee Badge */}
         <div className="bg-success/10 border border-success/20 rounded-2xl p-6 mb-8 text-center">
           <Shield className="w-12 h-12 mx-auto mb-3 text-success" />
           <h3 className="text-lg font-black text-foreground mb-1">
             GARANTÍA DE 7 DÍAS
           </h3>
           <p className="text-muted-foreground text-sm">
-            ¿No te gustó? ¡Te devolvemos tu dinero!
+            ¿No te convenció? ¡Te devolvemos tu dinero!
           </p>
         </div>
 
-        {/* Section Title */}
         <div className="text-center mb-8">
           <h2 className="text-2xl font-black text-foreground mb-1">
             TU COMPRA ESTÁ
@@ -48,7 +46,6 @@ const GuaranteeSection = () => {
           </p>
         </div>
 
-        {/* Guarantee Cards */}
         <div className="space-y-4 mb-8">
           {guarantees.map((item, index) => (
             <div 
@@ -66,7 +63,6 @@ const GuaranteeSection = () => {
           ))}
         </div>
 
-        {/* CTA */}
         <a 
           href="#pricing" 
           className="btn-gradient w-full flex items-center justify-center text-lg"

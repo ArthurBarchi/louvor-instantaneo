@@ -11,25 +11,24 @@ const SpecialOfferSection = () => {
     },
     {
       icon: Music,
-      title: "Multitracks Gospel",
+      title: "Multitracks de Adoración",
       description: "Archivos con instrumentos separados para ensayar como un profesional.",
     },
     {
       icon: FileText,
-      title: "5.000 Partituras Gospel",
+      title: "5.000 Partituras Cristianas",
       description: "Una biblioteca digital para músicos y ministerios.",
     },
     {
       icon: Volume2,
       title: "Música de Fondo para Oración",
-      description: "Instrumentales gospel perfectos para momentos de oración y predicación.",
+      description: "Instrumentales perfectos para momentos de oración y predicación.",
     },
   ];
 
   return (
     <section className="section-dark py-12 px-4">
       <div className="container max-w-lg mx-auto">
-        {/* Section Title */}
         <div className="text-center mb-8">
           <p className="text-primary font-bold text-sm uppercase tracking-wider mb-2">
             OFERTA ESPECIAL
@@ -39,10 +38,8 @@ const SpecialOfferSection = () => {
           </h2>
         </div>
 
-        {/* Full Countdown Timer */}
         <CountdownTimer variant="full" />
 
-        {/* Main Offer Card */}
         <div className="card-elevated p-6 mb-6">
           <div className="flex items-center justify-center gap-2 mb-4">
             <Gift className="w-6 h-6 text-primary animate-pulse" />
@@ -52,16 +49,14 @@ const SpecialOfferSection = () => {
             +4 BONOS EXCLUSIVOS
           </p>
           
-          {/* Ebook Image */}
           <div className="flex justify-center mb-6">
           <img 
             src={bonusEbook} 
-            alt="Paquete de Bonos - Playbacks Gospel" 
+            alt="Paquete de Bonos - Playbacks Cristianos" 
             className="w-full max-w-xs h-auto drop-shadow-lg"
           />
           </div>
 
-          {/* Bonuses List */}
           <div className="space-y-4">
             {bonuses.map((bonus, index) => (
               <div key={index} className="flex items-start gap-3">
@@ -77,7 +72,6 @@ const SpecialOfferSection = () => {
           </div>
         </div>
 
-        {/* CTA */}
         <a 
           href="#pricing" 
           className="btn-gradient w-full flex items-center justify-center text-lg animate-stretch"
