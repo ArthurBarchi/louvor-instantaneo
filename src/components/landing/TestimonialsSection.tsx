@@ -3,10 +3,10 @@ import whatsappTestimonials from "@/assets/whatsapp-testimonials.png";
 
 const TestimonialsSection = () => {
   const stats = [
-    { icon: Users, value: "+5.000", label: "Ministérios Abençoados" },
-    { icon: ThumbsUp, value: "97%", label: "De Satisfação" },
-    { icon: Star, value: "4.9/5", label: "Avaliação Média" },
-    { icon: MessageCircle, value: "+1.000", label: "Mensagens de Gratidão" },
+    { icon: Users, value: "+5.000", label: "Ministerios Bendecidos" },
+    { icon: ThumbsUp, value: "97%", label: "De Satisfacción" },
+    { icon: Star, value: "4.9/5", label: "Calificación Promedio" },
+    { icon: MessageCircle, value: "+1.000", label: "Mensajes de Gratitud" },
   ];
 
   return (
@@ -15,13 +15,13 @@ const TestimonialsSection = () => {
         {/* Section Title */}
         <div className="text-center mb-8">
           <h2 className="text-2xl font-black text-foreground mb-1">
-            VEJA O QUE ACHAM
+            MIRA LO QUE OPINAN
           </h2>
           <p className="text-2xl font-black text-gradient">
-            DOS PLAYBACKS
+            DE LOS PLAYBACKS
           </p>
           <p className="text-sm text-muted-foreground mt-2">
-            Depoimentos de Ministérios Transformados
+            Testimonios de Ministerios Transformados
           </p>
         </div>
 
@@ -29,7 +29,7 @@ const TestimonialsSection = () => {
         <div className="mb-8">
           <img 
             src={whatsappTestimonials} 
-            alt="Depoimentos de clientes satisfeitos no WhatsApp" 
+            alt="Testimonios de clientes satisfechos en WhatsApp" 
             className="w-full rounded-xl shadow-lg"
           />
         </div>
@@ -37,7 +37,7 @@ const TestimonialsSection = () => {
         {/* Social Proof */}
         <div className="bg-card rounded-2xl p-6 shadow-sm mb-6">
           <p className="text-center text-foreground font-semibold mb-6">
-            Junte-se a Milhares de Ministérios Satisfeitos!
+            ¡Únete a Miles de Ministerios Satisfechos!
           </p>
           
           <div className="grid grid-cols-2 gap-4">
@@ -61,7 +61,7 @@ const TestimonialsSection = () => {
           ))}
         </div>
         <p className="text-center text-sm text-muted-foreground">
-          Avaliado por milhares de usuários
+          Calificado por miles de usuarios
         </p>
       </div>
     </section>

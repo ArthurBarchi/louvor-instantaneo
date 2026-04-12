@@ -2,10 +2,10 @@ import { Heart, Target, Users, Sparkles } from "lucide-react";
 
 const StorySection = () => {
   const painPoints = [
-    "CDs que custavam R$ 15,00 por apenas poucos hinos.",
-    "Playbacks do Youtube que falhavam na hora do culto.",
-    "Horas perdidas procurando os hinos certos para louvar.",
-    "Louvores importantes deixando de ser cantados por falta de material.",
+    "CDs que costaban $15 por solo unos pocos himnos.",
+    "Playbacks de YouTube que fallaban en pleno culto.",
+    "Horas perdidas buscando los himnos correctos para alabar.",
+    "Alabanzas importantes que dejaban de cantarse por falta de material.",
   ];
 
   const storyCards = [
@@ -13,32 +13,32 @@ const StorySection = () => {
       icon: Heart,
       iconBg: "bg-gradient-to-br from-rose-400 to-red-500",
       iconColor: "text-white",
-      title: "Uma Missão Que Nasceu em Casa",
-      content: "Desde pequeno, eu via a mesma luta: minha mãe louvava na igreja, mas sempre enfrentava a dificuldade de encontrar playbacks de qualidade.",
+      title: "Una Misión Que Nació en Casa",
+      content: "Desde pequeño, veía la misma lucha: mi mamá alababa en la iglesia, pero siempre enfrentaba la dificultad de encontrar playbacks de calidad.",
       hasList: false,
     },
     {
       icon: Target,
       iconBg: "bg-gradient-to-br from-amber-400 to-orange-500",
       iconColor: "text-white",
-      title: "A Dor Que Nos Motivou",
-      intro: "Minha mãe sempre me pedia ajuda. Mas o que mais me doía era ver o quanto ela gastava em CD's.",
+      title: "El Dolor Que Nos Motivó",
+      intro: "Mi mamá siempre me pedía ayuda. Pero lo que más me dolía era ver cuánto gastaba en CDs.",
       hasList: true,
     },
     {
       icon: Users,
       iconBg: "bg-gradient-to-br from-sky-400 to-blue-500",
       iconColor: "text-white",
-      title: "A Solução Que Construímos Juntos",
-      content: "Foi quando tive uma visão: e se pudéssemos reunir milhares de playbacks de alta qualidade em um só lugar? Então juntei uma equipe apaixonada por adoração e trabalhamos por meses construindo o Estúdio Gospel, organizando e testando cada arquivo para garantir máxima qualidade.",
+      title: "La Solución Que Construimos Juntos",
+      content: "Fue cuando tuve una visión: ¿y si pudiéramos reunir miles de playbacks de alta calidad en un solo lugar? Entonces reuní un equipo apasionado por la adoración y trabajamos por meses construyendo Estudio Gospel, organizando y probando cada archivo para garantizar la máxima calidad.",
       hasList: false,
     },
     {
       icon: Sparkles,
       iconBg: "bg-gradient-to-br from-violet-400 to-purple-500",
       iconColor: "text-white",
-      title: "Por Que Apenas R$ 10,00?",
-      content: "Muitos me perguntam por que é tão barato. A resposta é simples. Esse valor simbólico cobre nossos custos e nos permite continuar ajudando. Nossa missão não é lucrar. É facilitar o louvor em milhares de igrejas pelo Brasil.",
+      title: "¿Por Qué Solo $10?",
+      content: "Muchos me preguntan por qué es tan barato. La respuesta es simple. Este valor simbólico cubre nuestros costos y nos permite seguir ayudando. Nuestra misión no es ganar dinero. Es facilitar la alabanza en miles de iglesias en toda Latinoamérica.",
       hasList: false,
     },
   ];
@@ -52,13 +52,13 @@ const StorySection = () => {
             <Heart className="w-8 h-8 text-primary" />
           </div>
           <h2 className="text-2xl font-black text-foreground mb-1">
-            POR QUE CRIAMOS
+            ¿POR QUÉ CREAMOS
           </h2>
           <p className="text-2xl font-black text-gradient">
-            ESTE PROJETO?
+            ESTE PROYECTO?
           </p>
           <p className="text-sm text-muted-foreground mt-3 max-w-xs mx-auto">
-            Uma história de fé, família e dedicação ao louvor
+            Una historia de fe, familia y dedicación a la alabanza
           </p>
         </div>
 
@@ -105,7 +105,7 @@ const StorySection = () => {
         <div className="mt-10 text-center">
           <div className="bg-gradient-to-r from-primary/5 via-primary/10 to-primary/5 rounded-2xl p-6 mb-6 border border-primary/20">
             <p className="text-foreground font-semibold italic text-lg leading-relaxed">
-              "Este projeto foi feito pensando em você, que enfrenta a mesma dificuldade."
+              "Este proyecto fue hecho pensando en ti, que enfrentas la misma dificultad."
             </p>
           </div>
           
@@ -113,11 +113,11 @@ const StorySection = () => {
             href="#pricing" 
             className="btn-gradient inline-flex items-center justify-center text-lg px-10 shadow-gold"
           >
-            QUERO FAZER PARTE ❤️
+            QUIERO SER PARTE ❤️
           </a>
           
           <p className="text-muted-foreground text-sm mt-5">
-            Que Deus abençoe seu ministério! 🙏
+            ¡Que Dios bendiga tu ministerio! 🙏
           </p>
         </div>
       </div>

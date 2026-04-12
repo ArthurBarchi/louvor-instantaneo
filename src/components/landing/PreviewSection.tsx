@@ -3,15 +3,15 @@ import mockupDevices from "@/assets/mockup-devices.png";
 
 const PreviewSection = () => {
   const stats = [
-    { icon: Users, value: "+100", label: "Cantores" },
-    { icon: Disc, value: "+500", label: "Álbuns" },
-    { icon: Music, value: "+1.500", label: "Hinos" },
+    { icon: Users, value: "+100", label: "Cantantes" },
+    { icon: Disc, value: "+500", label: "Álbumes" },
+    { icon: Music, value: "+1.500", label: "Himnos" },
   ];
 
   const steps = [
-    { icon: Download, label: "Baixe Instantaneamente" },
-    { icon: Usb, label: "Copie pro pendrive" },
-    { icon: Church, label: "Use na Igreja" },
+    { icon: Download, label: "Descarga al Instante" },
+    { icon: Usb, label: "Copia a tu USB" },
+    { icon: Church, label: "Úsalo en la Iglesia" },
   ];
 
   return (
@@ -20,10 +20,10 @@ const PreviewSection = () => {
         {/* Section Title */}
         <div className="text-center mb-8">
           <h2 className="text-2xl font-black text-foreground mb-1">
-            VEJA O QUE VOCÊ
+            MIRA LO QUE
           </h2>
           <p className="text-2xl font-black text-gradient">
-            RECEBE NA PRÁTICA
+            RECIBES EN LA PRÁCTICA
           </p>
         </div>
 
@@ -31,7 +31,7 @@ const PreviewSection = () => {
         <div className="mb-8">
           <img 
             src={mockupDevices} 
-            alt="Playbacks em múltiplos dispositivos" 
+            alt="Playbacks en múltiples dispositivos" 
             className="w-full rounded-xl"
           />
         </div>
@@ -60,7 +60,6 @@ const PreviewSection = () => {
               <p className="text-xs font-medium text-foreground">{step.label}</p>
               {index < steps.length - 1 && (
                 <div className="absolute translate-x-12">
-                  {/* Arrow would go here but we'll keep it simple */}
                 </div>
               )}
             </div>

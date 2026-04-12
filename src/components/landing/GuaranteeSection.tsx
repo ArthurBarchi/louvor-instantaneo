@@ -4,23 +4,23 @@ const GuaranteeSection = () => {
   const guarantees = [
     {
       icon: CreditCard,
-      title: "Pagamento Seguro",
-      description: "Processado pelo Mercado Pago, uma das plataformas mais seguras e confiáveis do Brasil. Seus dados financeiros são criptografados e protegidos.",
+      title: "Pago Seguro",
+      description: "Procesado por plataformas de pago seguras y confiables. Tus datos financieros están encriptados y protegidos.",
     },
     {
       icon: Cloud,
-      title: "Armazenamento Seguro",
-      description: "Todo o material fica hospedado no Google Drive, garantindo que seus arquivos estejam sempre disponíveis e protegidos.",
+      title: "Almacenamiento Seguro",
+      description: "Todo el material está alojado en Google Drive, garantizando que tus archivos estén siempre disponibles y protegidos.",
     },
     {
       icon: Lock,
-      title: "Privacidade Garantida",
-      description: "Seus dados pessoais são 100% protegidos e nunca serão compartilhados com terceiros.",
+      title: "Privacidad Garantizada",
+      description: "Tus datos personales están 100% protegidos y nunca serán compartidos con terceros.",
     },
     {
       icon: CheckCircle,
-      title: "Satisfação Garantida",
-      description: "Se dentro de 7 dias você não estiver satisfeito, devolvemos 100% do seu dinheiro. Sem perguntas, sem complicação.",
+      title: "Satisfacción Garantizada",
+      description: "Si dentro de 7 días no estás satisfecho, te devolvemos el 100% de tu dinero. Sin preguntas, sin complicaciones.",
     },
   ];
 
@@ -31,17 +31,17 @@ const GuaranteeSection = () => {
         <div className="bg-success/10 border border-success/20 rounded-2xl p-6 mb-8 text-center">
           <Shield className="w-12 h-12 mx-auto mb-3 text-success" />
           <h3 className="text-lg font-black text-foreground mb-1">
-            GARANTIA DE 7 DIAS
+            GARANTÍA DE 7 DÍAS
           </h3>
           <p className="text-muted-foreground text-sm">
-            Não gostou? Devolvemos seu dinheiro!
+            ¿No te gustó? ¡Te devolvemos tu dinero!
           </p>
         </div>
 
         {/* Section Title */}
         <div className="text-center mb-8">
           <h2 className="text-2xl font-black text-foreground mb-1">
-            SUA COMPRA ESTÁ
+            TU COMPRA ESTÁ
           </h2>
           <p className="text-2xl font-black text-gradient">
             100% PROTEGIDA
@@ -71,7 +71,7 @@ const GuaranteeSection = () => {
           href="#pricing" 
           className="btn-gradient w-full flex items-center justify-center text-lg"
         >
-          COMPRAR AGORA
+          COMPRAR AHORA
         </a>
       </div>
     </section>
