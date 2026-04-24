@@ -20,6 +20,10 @@ const FAQSection = () => {
       answer: "Todos los playbacks fueron seleccionados y probados para asegurar la mejor calidad de sonido. Son archivos MP3 en alta definición, listos para uso profesional.",
     },
     {
+      question: "¿Los playbacks incluyen letra?",
+      answer: "¡Sí! Cada playback viene con su letra correspondiente, para que puedas cantar con total confianza durante los ensayos o en el momento de la alabanza.",
+    },
+    {
       question: "¿Puedo grabarlos en un CD o USB?",
       answer: "¡Por supuesto! Una vez descargados, puedes grabarlos en CDs, USBs o cualquier dispositivo de almacenamiento para usarlos donde quieras.",
     },
