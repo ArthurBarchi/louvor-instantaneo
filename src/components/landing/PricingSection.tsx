@@ -219,9 +219,22 @@ const PricingSection = () => {
           </div>
         </div>
 
-        <div className="mt-8 flex items-center justify-center gap-4 opacity-60">
-          <img src="https://logospng.org/download/visa/logo-visa-1024.png" alt="Visa" className="h-6 object-contain invert" />
-          <img src="https://logospng.org/download/mastercard/logo-mastercard-1024.png" alt="Mastercard" className="h-8 object-contain" />
+        <div className="mt-8">
+          <p className="text-center text-white/60 text-xs mb-4 uppercase tracking-wider">
+            Métodos de pago aceptados
+          </p>
+          <div className="flex items-center justify-center flex-wrap gap-3 bg-white rounded-xl p-4">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Visa_Inc._logo.svg" alt="Visa" className="h-5 object-contain" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" className="h-7 object-contain" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/fa/American_Express_logo_%282018%29.svg" alt="American Express" className="h-7 object-contain" />
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/PayPal_2014_logo.svg" alt="PayPal" className="h-5 object-contain" />
+            <img src="https://logodownload.org/wp-content/uploads/2019/06/oxxo-logo-0.png" alt="OXXO" className="h-6 object-contain" />
+            <img src="https://logosenvector.com/logo/img/mercado-pago-2769.png" alt="Mercado Pago" className="h-6 object-contain" />
+            <img src="https://www.pse.com.co/static/img/pse-logo.png" alt="PSE" className="h-7 object-contain" />
+          </div>
+          <p className="text-center text-white/50 text-xs mt-3">
+            Tarjeta de crédito, débito, OXXO, PSE, Mercado Pago y más
+          </p>
         </div>
       </div>
     </section>
