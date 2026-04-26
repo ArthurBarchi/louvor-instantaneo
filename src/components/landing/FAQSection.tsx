@@ -17,7 +17,7 @@ const FAQSection = () => {
     },
     {
       question: "¿Los playbacks son de buena calidad?",
-      answer: "Todos los playbacks fueron seleccionados y probados para asegurar la mejor calidad de sonido. Son archivos MP3 en alta definición, listos para uso profesional.",
+      answer: "Todos los playbacks fueron seleccionados y probados para asegurar la mejor calidad de sonido. Son archivos MP4 con letras en alta definición, listos para uso profesional.",
     },
     {
       question: "¿Los playbacks incluyen letra?",
