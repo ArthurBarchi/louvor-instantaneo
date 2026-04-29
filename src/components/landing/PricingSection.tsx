@@ -97,7 +97,7 @@ const PricingSection = () => {
             </ul>
 
             <a 
-              href="https://pay.hotmart.com/L105528461N?off=r4v052gc&checkoutMode=10"
+              href="https://black-legacy.mycartpanda.com/checkout/209856700:1"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full py-4 px-6 text-center font-bold text-white bg-success rounded-full hover:bg-success/90 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
@@ -182,7 +182,7 @@ const PricingSection = () => {
             </div>
 
             <a 
-              href="https://pay.hotmart.com/L105528461N?off=yzxc8ikq&checkoutMode=10"
+              href="https://black-legacy.mycartpanda.com/checkout/209856630:1"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full py-4 px-6 text-center font-bold text-white bg-success rounded-full hover:bg-success/90 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
