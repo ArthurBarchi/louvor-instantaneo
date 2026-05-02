@@ -1,4 +1,4 @@
-import { Heart, Target, Users, Sparkles } from "lucide-react";
+import { Heart, Target, Users, Sparkles, HandHeart } from "lucide-react";
 
 const StorySection = () => {
   const painPoints = [
@@ -110,11 +110,11 @@ const StorySection = () => {
             href="#pricing" 
             className="btn-gradient inline-flex items-center justify-center text-lg px-10 shadow-gold"
           >
-            QUIERO SER PARTE ❤️
+            QUIERO SER PARTE <Heart className="w-5 h-5 ml-2 fill-current" />
           </a>
           
-          <p className="text-muted-foreground text-sm mt-5">
-            ¡Que Dios bendiga tu ministerio! 🙏
+          <p className="text-muted-foreground text-sm mt-5 inline-flex items-center justify-center gap-2">
+            ¡Que Dios bendiga tu ministerio! <HandHeart className="w-4 h-4" />
           </p>
         </div>
       </div>
