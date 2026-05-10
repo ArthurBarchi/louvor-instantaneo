@@ -78,7 +78,7 @@ const PricingSection = () => {
                 $79
               </p>
               <p className="text-4xl font-black text-success mt-1">
-                $10
+                $5
               </p>
               <p className="text-sm text-muted-foreground mt-1">
                 Pago único
@@ -102,7 +102,7 @@ const PricingSection = () => {
               rel="noopener noreferrer"
               className="block w-full py-4 px-6 text-center font-bold text-white bg-success rounded-full hover:bg-success/90 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
-              LO QUIERO – $10
+              LO QUIERO – $5
             </a>
             
             <p className="text-xs text-center text-muted-foreground mt-4">
@@ -126,7 +126,7 @@ const PricingSection = () => {
                 $137,90
               </p>
               <p className="text-4xl font-black text-success mt-1">
-                $17,90
+                $10
               </p>
               <p className="text-sm text-muted-foreground mt-1">
                 Pago único
@@ -187,7 +187,7 @@ const PricingSection = () => {
               rel="noopener noreferrer"
               className="block w-full py-4 px-6 text-center font-bold text-white bg-success rounded-full hover:bg-success/90 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
-              LO QUIERO – $17,90
+              LO QUIERO – $10
             </a>
             
             <p className="text-xs text-center text-muted-foreground mt-4">
