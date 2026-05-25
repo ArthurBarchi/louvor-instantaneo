@@ -13,15 +13,15 @@ const FAQSection = () => {
     },
     {
       question: "¿Puedo usarlo en el celular y en la computadora?",
-      answer: "¡Claro! Puedes descargar los playbacks en cualquier dispositivo: celular, computadora o tablet. Después los pasas a un USB o CD para usar en la iglesia.",
+      answer: "¡Claro! Puedes descargar los pistas en cualquier dispositivo: celular, computadora o tablet. Después los pasas a un USB o CD para usar en la iglesia.",
     },
     {
-      question: "¿Los playbacks son de buena calidad?",
-      answer: "Todos los playbacks fueron seleccionados y probados para asegurar la mejor calidad de sonido. Son archivos MP4 con letras en alta definición, listos para uso profesional.",
+      question: "¿Los pistas son de buena calidad?",
+      answer: "Todos los pistas fueron seleccionados y probados para asegurar la mejor calidad de sonido. Son archivos MP4 con letras en alta definición, listos para uso profesional.",
     },
     {
-      question: "¿Los playbacks incluyen letra?",
-      answer: "¡Sí! Cada playback viene con su letra correspondiente, para que puedas cantar con total confianza durante los ensayos o en el momento de la alabanza.",
+      question: "¿Los pistas incluyen letra?",
+      answer: "¡Sí! Cada pista viene con su letra correspondiente, para que puedas cantar con total confianza durante los ensayos o en el momento de la alabanza.",
     },
     {
       question: "¿Puedo grabarlos en un CD o USB?",
