@@ -1,5 +1,5 @@
 import { Shield, Lock, CreditCard } from "lucide-react";
-import heroImage from "@/assets/hero-pistas.png";
+import heroImage from "@/assets/hero-playbacks.png";
 import CountdownTimer from "./CountdownTimer";
 
 const HeroSection = () => {
