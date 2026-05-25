@@ -29,7 +29,7 @@ const PreviewSection = () => {
         <div className="mb-8">
           <img 
             src={mockupDevices} 
-            alt="Playbacks en múltiples dispositivos" 
+            alt="Pistas en múltiples dispositivos" 
             className="w-full rounded-xl"
           />
         </div>

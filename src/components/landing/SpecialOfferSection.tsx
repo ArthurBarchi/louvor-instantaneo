@@ -52,7 +52,7 @@ const SpecialOfferSection = () => {
           <div className="flex justify-center mb-6">
           <img 
             src={bonusEbook} 
-            alt="Paquete de Bonos - Playbacks Cristianos" 
+            alt="Paquete de Bonos - Pistas Cristianos" 
             className="w-full max-w-xs h-auto drop-shadow-lg"
           />
           </div>
