@@ -21,7 +21,7 @@ const FAQSection = () => {
     },
     {
       question: "¿Los pistas incluyen letra?",
-      answer: "¡Sí! Cada playback viene con su letra correspondiente, para que puedas cantar con total confianza durante los ensayos o en el momento de la alabanza.",
+      answer: "¡Sí! Cada pista viene con su letra correspondiente, para que puedas cantar con total confianza durante los ensayos o en el momento de la alabanza.",
     },
     {
       question: "¿Puedo grabarlos en un CD o USB?",
