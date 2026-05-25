@@ -3,7 +3,7 @@ import { Heart, Target, Users, Sparkles } from "lucide-react";
 const StorySection = () => {
   const painPoints = [
     "CDs que costaban $15 por solo unos pocos himnos.",
-    "Pistas de YouTube que fallaban en pleno culto.",
+    "Playbacks de YouTube que fallaban en pleno culto.",
     "Horas perdidas buscando los himnos correctos para alabar.",
     "Alabanzas importantes que dejaban de cantarse por falta de material.",
   ];
@@ -14,7 +14,7 @@ const StorySection = () => {
       iconBg: "bg-gradient-to-br from-rose-400 to-red-500",
       iconColor: "text-white",
       title: "Una Misión Que Nació en Casa",
-      content: "Desde pequeño, veía la misma lucha: mi mamá cantaba en la iglesia, pero siempre enfrentaba la dificultad de encontrar pistas de calidad.",
+      content: "Desde pequeño, veía la misma lucha: mi mamá cantaba en la iglesia, pero siempre enfrentaba la dificultad de encontrar playbacks de calidad.",
       hasList: false,
     },
     {
@@ -30,7 +30,7 @@ const StorySection = () => {
       iconBg: "bg-gradient-to-br from-sky-400 to-blue-500",
       iconColor: "text-white",
       title: "La Solución Que Construimos Juntos",
-      content: "Fue cuando tuve una idea: ¿y si pudiéramos reunir miles de pistas de alta calidad en un solo lugar? Reuní un equipo apasionado por la adoración y trabajamos por meses construyendo Estudio Alabanza, organizando y probando cada archivo para asegurar la mejor calidad.",
+      content: "Fue cuando tuve una idea: ¿y si pudiéramos reunir miles de playbacks de alta calidad en un solo lugar? Reuní un equipo apasionado por la adoración y trabajamos por meses construyendo Estudio Alabanza, organizando y probando cada archivo para asegurar la mejor calidad.",
       hasList: false,
     },
     {

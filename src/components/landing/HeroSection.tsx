@@ -10,7 +10,7 @@ const HeroSection = () => {
       <div className="container max-w-lg mx-auto relative">
         <div className="text-center mb-6">
           <h1 className="text-3xl md:text-4xl font-black text-foreground leading-tight mb-2">
-            1.500 Pistas Para
+            1.500 Playbacks Para
             <br />
             <span className="text-gradient">Alabar En Tu Iglesia</span>
           </h1>
@@ -23,13 +23,13 @@ const HeroSection = () => {
         <div className="mb-6 animate-fade-in">
           <img 
             src={heroImage} 
-            alt="Pistas Cristianos - Más de 1500 himnos de alabanza" 
+            alt="Playbacks Cristianos - Más de 1500 himnos de alabanza" 
             className="w-full rounded-2xl"
           />
         </div>
 
         <p className="text-center text-foreground text-lg font-black leading-relaxed mb-6">
-          DEJA de perder tiempo buscando pistas malos en YouTube o gastando en CDs. Descárgalos{" "}
+          DEJA de perder tiempo buscando playbacks malos en YouTube o gastando en CDs. Descárgalos{" "}
           <span className="text-amber-500">AL INSTANTE</span> y úsalos en tu iglesia, USB o donde quieras. <span className="text-amber-500">FÁCIL</span> y <span className="text-amber-500">RÁPIDO</span>.
         </p>
 
