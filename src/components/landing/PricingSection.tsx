@@ -78,7 +78,7 @@ const PricingSection = () => {
                 $79
               </p>
               <p className="text-4xl font-black text-success mt-1">
-                $5
+                $10
               </p>
               <p className="text-sm text-muted-foreground mt-1">
                 Pago único
@@ -97,12 +97,12 @@ const PricingSection = () => {
             </ul>
 
             <a 
-              href="https://pay.hotmart.com/L105528461N?off=r4v052gc&checkoutMode=10"
+              href="https://pay.hotmart.com/Q105968714J?off=q107czng&checkoutMode=10"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full py-4 px-6 text-center font-bold text-white bg-success rounded-full hover:bg-success/90 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
-              LO QUIERO – $5
+              LO QUIERO – $10
             </a>
             
             <p className="text-xs text-center text-muted-foreground mt-4">
@@ -126,7 +126,7 @@ const PricingSection = () => {
                 $137,90
               </p>
               <p className="text-4xl font-black text-success mt-1">
-                $10
+                $19,90
               </p>
               <p className="text-sm text-muted-foreground mt-1">
                 Pago único
@@ -182,12 +182,12 @@ const PricingSection = () => {
             </div>
 
             <a 
-              href="https://pay.hotmart.com/L105528461N?off=yzxc8ikq&checkoutMode=10"
+              href="https://pay.hotmart.com/Q105968714J?checkoutMode=10&bid=1779669242082"
               target="_blank"
               rel="noopener noreferrer"
               className="block w-full py-4 px-6 text-center font-bold text-white bg-success rounded-full hover:bg-success/90 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
-              LO QUIERO – $10
+              LO QUIERO – $19,90
             </a>
             
             <p className="text-xs text-center text-muted-foreground mt-4">

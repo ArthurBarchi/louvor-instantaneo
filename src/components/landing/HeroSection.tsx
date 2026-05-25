@@ -36,7 +36,7 @@ const HeroSection = () => {
         <div className="text-center mb-6">
           <p className="text-2xl font-black text-foreground">
             TODO POR SOLO{" "}
-            <span className="text-gradient text-4xl">$5</span>
+            <span className="text-gradient text-4xl">$10</span>
           </p>
         </div>
 
