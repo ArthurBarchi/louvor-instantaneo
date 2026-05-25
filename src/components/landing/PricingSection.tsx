@@ -88,7 +88,7 @@ const PricingSection = () => {
             <ul className="space-y-3 mb-6">
               <li className="flex items-center gap-3 text-sm text-foreground">
                 <Check className="w-5 h-5 text-success flex-shrink-0" />
-                1.500 Pistas Cristianos
+                1.500 Playbacks Cristianos
               </li>
               <li className="flex items-center gap-3 text-sm text-foreground">
                 <Check className="w-5 h-5 text-success flex-shrink-0" />
