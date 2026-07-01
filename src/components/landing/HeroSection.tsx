@@ -32,11 +32,6 @@ const HeroSection = () => {
           />
         </div>
 
-        <p className="text-center text-foreground text-lg font-black leading-relaxed mb-6">
-          DEJA de perder tiempo buscando playbacks malos en YouTube o gastando en CDs. Descárgalos{" "}
-          <span className="text-amber-500">AL INSTANTE</span> y úsalos en tu iglesia, USB o donde quieras. <span className="text-amber-500">FÁCIL</span> y <span className="text-amber-500">RÁPIDO</span>.
-        </p>
-
         <div className="text-center mb-6">
           <p className="text-2xl font-black text-foreground">
             TODO POR SOLO{" "}
