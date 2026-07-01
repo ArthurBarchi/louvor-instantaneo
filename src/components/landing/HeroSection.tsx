@@ -22,6 +22,9 @@ const HeroSection = () => {
             <br />
             <span className="text-gradient">Alabar En Tu Iglesia</span>
           </h1>
+          <p className="text-lg md:text-xl text-muted-foreground mt-4 leading-relaxed">
+            DEJA de perder tiempo buscando playbacks malos en YouTube o gastando en CDs. Descárgalos AL INSTANTE y úsalos en tu iglesia, USB o donde quieras. FÁCIL y RÁPIDO.
+          </p>
         </div>
 
         <div className="mb-6 animate-fade-in">
