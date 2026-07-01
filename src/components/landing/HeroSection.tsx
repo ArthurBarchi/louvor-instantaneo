@@ -9,7 +9,7 @@ const HeroSection = () => {
       
       <div className="container max-w-lg mx-auto relative">
         <div className="text-center mb-6">
-          <h1 className="text-3xl md:text-4xl font-black text-foreground leading-tight mb-2">
+          <h1 className="text-4xl md:text-6xl font-black text-foreground leading-tight mb-2">
             1.500 Playbacks Para
             <br />
             <span className="text-gradient">Alabar En Tu Iglesia</span>
