@@ -23,13 +23,13 @@ const CountdownTimer = ({ variant = "badge" }: CountdownTimerProps) => {
       const now = new Date();
       const midnight = new Date();
       midnight.setHours(24, 0, 0, 0);
-      
+
       const diff = midnight.getTime() - now.getTime();
-      
+
       const hours = Math.floor(diff / (1000 * 60 * 60));
       const minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
       const seconds = Math.floor((diff % (1000 * 60)) / 1000);
-      
+
       return { hours, minutes, seconds };
     };
 
@@ -57,7 +57,7 @@ const CountdownTimer = ({ variant = "badge" }: CountdownTimerProps) => {
 
   return (
     <div className="bg-card border border-border rounded-2xl p-6 mb-6">
-      {/* Badge */}
+      {/* Badige */}
       <div className="flex justify-center mb-4">
         <span className="bg-red-600 text-white px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-wider">
           Oferta por tiempo limitado

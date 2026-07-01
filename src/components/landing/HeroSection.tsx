@@ -32,8 +32,8 @@ const HeroSection = () => {
           />
         </div>
 
-        <p className="text-lg md:text-xl text-muted-foreground leading-relaxed text-center mb-6">
-          DEJA de perder tiempo buscando playbacks malos en YouTube o gastando en CDs. Descárgalos AL INSTANTE y úsalos en tu iglesia, USB o donde quieras. FÁCIL y RÁPIDO.
+        <p className="text-base md:text-lg text-muted-foreground leading-relaxed text-center mb-6">
+          Descarga <strong className="text-foreground">instantánea</strong> · Úsalos en tu iglesia, USB o donde quieras
         </p>
 
         <div className="text-center mb-6">
@@ -46,7 +46,7 @@ const HeroSection = () => {
         <div className="mb-6">
           <a 
             href="#pricing" 
-            className="btn-gradient w-full flex items-center justify-center text-lg"
+            className="block w-full py-4 px-8 text-center font-bold text-white text-lg bg-success rounded-xl hover:bg-success/90 transition-all duration-300 shadow-[0_10px_40px_-10px_hsl(142_76%_36%/0.5)] hover:shadow-[0_14px_50px_-10px_hsl(142_76%_36%/0.6)] hover:-translate-y-1 animate-[pulse_2s_ease-in-out_infinite]"
           >
             SÍ, ¡LO QUIERO AHORA!
           </a>

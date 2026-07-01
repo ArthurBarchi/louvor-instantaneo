@@ -100,7 +100,7 @@ const PricingSection = () => {
               href="https://pay.hotmart.com/Q105968714J?off=q107czng&checkoutMode=10"
               target="_blank"
               rel="noopener noreferrer"
-              className="block w-full py-4 px-6 text-center font-bold text-white bg-success rounded-full hover:bg-success/90 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="block w-full py-4 px-6 text-center font-bold text-white bg-success rounded-full hover:bg-success/90 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-[0_14px_40px_-10px_hsl(142_76%_36%/0.5)] animate-[pulse_2s_ease-in-out_infinite]"
             >
               LO QUIERO – $10
             </a>
@@ -185,7 +185,7 @@ const PricingSection = () => {
               href="https://pay.hotmart.com/Q105968714J?checkoutMode=10&bid=1779669242082"
               target="_blank"
               rel="noopener noreferrer"
-              className="block w-full py-4 px-6 text-center font-bold text-white bg-success rounded-full hover:bg-success/90 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="block w-full py-4 px-6 text-center font-bold text-white bg-success rounded-full hover:bg-success/90 hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-[0_14px_40px_-10px_hsl(142_76%_36%/0.5)] animate-[pulse_2s_ease-in-out_infinite]"
             >
               LO QUIERO – $19,90
             </a>
