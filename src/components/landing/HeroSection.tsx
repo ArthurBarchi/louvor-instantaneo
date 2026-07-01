@@ -7,8 +7,8 @@ const HeroSection = () => {
     <section className="relative bg-background pb-12 px-4 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent pointer-events-none" />
 
-      <div className="bg-primary text-white text-center py-3 px-4 text-sm font-normal leading-relaxed -mx-4 mb-6">
-        DEJA de perder tiempo buscando playbacks malos en YouTube o gastando en CDs. Descárgalos AL INSTANTE y úsalos en tu iglesia, USB o donde quieras. FÁCIL y RÁPIDO.
+      <div className="text-white text-center py-2.5 px-4 text-xs font-bold uppercase tracking-wider -mx-4 mb-6" style={{ background: 'var(--gradient-primary)' }}>
+        DESCUENTO EXCLUSIVO SOLO HOY • 01/07/2026
       </div>
       
       <div className="container max-w-lg mx-auto relative">
@@ -22,6 +22,9 @@ const HeroSection = () => {
             <br />
             <span className="text-gradient">Alabar En Tu Iglesia</span>
           </h1>
+          <p className="text-lg md:text-xl text-muted-foreground mt-4 leading-relaxed">
+            DEJA de perder tiempo buscando playbacks malos en YouTube o gastando en CDs. Descárgalos AL INSTANTE y úsalos en tu iglesia, USB o donde quieras. FÁCIL y RÁPIDO.
+          </p>
         </div>
 
         <div className="mb-6 animate-fade-in">
