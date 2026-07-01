@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { Check, Gift, ShieldCheck, Clock } from "lucide-react";
+import { Check, Clock, ShieldCheck, Zap, Lock } from "lucide-react";
+import kitImage from "@/assets/kit-cultos.jpg";
 
 const Upsell = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -10,7 +11,6 @@ const Upsell = () => {
   const [show, setShow] = useState(false);
 
   useEffect(() => {
-    // Entrance animation
     setTimeout(() => setShow(true), 100);
   }, []);
 
@@ -30,146 +30,180 @@ const Upsell = () => {
   }, []);
 
   return (
-    <main
-      className="min-h-screen flex items-center justify-center px-4 py-10"
-      style={{
-        background:
-          "linear-gradient(135deg, hsl(220 25% 6%) 0%, hsl(220 20% 12%) 50%, hsl(220 25% 6%) 100%)",
-      }}
-    >
+    <main className="min-h-screen bg-white">
+      {/* Top bar - wait / confirmed */}
       <div
-        className={`max-w-md w-full transition-all duration-700 ease-out ${
-          show
-            ? "opacity-100 translate-y-0"
-            : "opacity-0 translate-y-8"
+        className="w-full py-3 px-4 text-center"
+        style={{
+          background: "linear-gradient(135deg, hsl(142 76% 36%) 0%, hsl(142 70% 30%) 100%)",
+        }}
+      >
+        <p className="text-white text-sm font-bold tracking-wide flex items-center justify-center gap-2">
+          <Check className="w-4 h-4" />
+          ¡ESPERA! Tu pedido aún no está completo
+        </p>
+      </div>
+
+      <div
+        className={`max-w-md mx-auto px-4 py-8 transition-all duration-700 ease-out ${
+          show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
         }`}
       >
-        {/* Success badge */}
+        {/* Headline */}
         <div className="text-center mb-6">
-          <div className="inline-flex items-center gap-2 bg-emerald-500/15 border border-emerald-500/30 text-emerald-400 text-sm font-semibold px-4 py-2 rounded-full mb-4">
-            <Check className="w-4 h-4" />
-            ¡Tu compra fue confirmada!
-          </div>
-          <p className="text-white/50 text-sm">
-            Antes de acceder a tu material, tenemos una oferta especial para ti.
+          <p className="text-amber-600 text-xs font-bold uppercase tracking-widest mb-2">
+            Oferta exclusiva de una sola vez
+          </p>
+          <h1 className="text-2xl md:text-3xl font-black text-gray-900 leading-tight">
+            Agrega el{" "}
+            <span
+              className="bg-clip-text text-transparent"
+              style={{
+                backgroundImage:
+                  "linear-gradient(135deg, hsl(38 92% 50%) 0%, hsl(28 95% 45%) 100%)",
+              }}
+            >
+              Kit Completo
+            </span>
+            <br />
+            para tus cultos
+          </h1>
+          <p className="text-gray-500 text-sm mt-2">
+            Todo lo que tu ministerio necesita, en un solo lugar.
           </p>
         </div>
 
-        {/* Main card */}
+        {/* Product Image */}
+        <div className="mb-6">
+          <img
+            src={kitImage}
+            alt="Kit Completo Para Tus Cultos"
+            className="w-full rounded-2xl shadow-lg"
+          />
+        </div>
+
+        {/* Timer urgency bar */}
         <div
-          className="rounded-3xl p-[1px] mb-6"
+          className="flex items-center justify-center gap-2 rounded-xl py-3 px-4 mb-6"
           style={{
-            background:
-              "linear-gradient(135deg, hsl(38 92% 50% / 0.5), hsl(38 92% 50% / 0.1), hsl(38 92% 50% / 0.3))",
+            background: "linear-gradient(135deg, hsl(0 0% 97%) 0%, hsl(38 50% 96%) 100%)",
+            border: "1px solid hsl(38 80% 85%)",
           }}
         >
+          <Clock className="w-4 h-4 text-amber-600" />
+          <span className="text-amber-800 text-sm font-semibold">
+            Esta oferta expira en{" "}
+            <span className="font-mono font-black text-amber-600">
+              {String(timeLeft.minutes).padStart(2, "0")}:
+              {String(timeLeft.seconds).padStart(2, "0")}
+            </span>
+          </span>
+        </div>
+
+        {/* Benefits */}
+        <div className="space-y-3 mb-6">
+          {[
+            "Planificador semanal de cultos listo para usar",
+            "Guías completas de adoración para líderes",
+            "Plantillas editables de orden del culto",
+            "Banco de ideas para predicaciones",
+            "Material visual profesional para proyección",
+            "Recursos gráficos para anuncios y redes",
+          ].map((item, i) => (
+            <div
+              key={i}
+              className="flex items-start gap-3"
+            >
+              <div
+                className="w-5 h-5 rounded-full flex items-center justify-center flex-shrink-0 mt-0.5"
+                style={{
+                  background: "linear-gradient(135deg, hsl(142 76% 36%) 0%, hsl(142 70% 30%) 100%)",
+                }}
+              >
+                <Check className="w-3 h-3 text-white" />
+              </div>
+              <span className="text-gray-700 text-sm leading-snug">{item}</span>
+            </div>
+          ))}
+        </div>
+
+        {/* Price section */}
+        <div
+          className="rounded-2xl p-6 mb-6 text-center"
+          style={{
+            background: "linear-gradient(135deg, hsl(220 20% 97%) 0%, hsl(220 15% 95%) 100%)",
+            border: "1px solid hsl(220 15% 90%)",
+          }}
+        >
+          <p className="text-xs text-gray-400 uppercase tracking-widest font-semibold mb-1">
+            Valor normal
+          </p>
+          <p className="text-2xl text-gray-300 line-through font-bold mb-2">$97</p>
+
+          <div className="flex items-center justify-center gap-1 mb-1">
+            <span className="text-gray-500 text-lg">Hoy solo</span>
+          </div>
+          <p className="text-5xl font-black text-gray-900 mb-1">
+            $27
+          </p>
+          <p className="text-gray-400 text-xs">
+            Pago único · Acceso inmediato · Sin suscripción
+          </p>
+        </div>
+
+        {/* CTA Button */}
+        <a
+          href="#"
+          className="group relative block w-full py-5 px-6 text-center font-black text-white text-lg rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 animate-btn-bounce"
+          style={{
+            background:
+              "linear-gradient(135deg, hsl(142 76% 36%) 0%, hsl(142 70% 28%) 100%)",
+            boxShadow: "0 10px 40px -10px hsl(142 76% 36% / 0.5)",
+          }}
+          onMouseEnter={(e) => {
+            (e.currentTarget as HTMLElement).style.boxShadow =
+              "0 16px 50px -10px hsl(142 76% 36% / 0.6)";
+          }}
+          onMouseLeave={(e) => {
+            (e.currentTarget as HTMLElement).style.boxShadow =
+              "0 10px 40px -10px hsl(142 76% 36% / 0.5)";
+          }}
+        >
+          <span className="relative z-10 flex items-center justify-center gap-2">
+            <Zap className="w-5 h-5" />
+            SÍ, AGREGAR EL KIT – $27
+          </span>
           <div
-            className="rounded-3xl p-6 md:p-8"
+            className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
             style={{
               background:
-                "linear-gradient(135deg, hsl(220 20% 12%) 0%, hsl(220 25% 10%) 100%)",
+                "linear-gradient(135deg, hsl(142 76% 40%) 0%, hsl(142 70% 32%) 100%)",
             }}
-          >
-            {/* Timer */}
-            <div className="flex items-center justify-center gap-2 mb-6">
-              <Clock className="w-4 h-4 text-amber-400" />
-              <span className="text-amber-400 text-sm font-semibold">
-                Oferta expira en{" "}
-                <span className="font-mono font-black">
-                  {String(timeLeft.minutes).padStart(2, "0")}:
-                  {String(timeLeft.seconds).padStart(2, "0")}
-                </span>
-              </span>
-            </div>
+          />
+        </a>
 
-            {/* Product title */}
-            <div className="text-center mb-6">
-              <div className="inline-flex items-center gap-1.5 text-amber-400 text-xs font-bold uppercase tracking-widest mb-3">
-                <Gift className="w-3.5 h-3.5" />
-                Oferta Exclusiva
-              </div>
-              <h1 className="text-2xl md:text-3xl font-black text-white leading-tight">
-                Kit Completo
-                <br />
-                <span
-                  className="bg-clip-text text-transparent"
-                  style={{
-                    backgroundImage:
-                      "linear-gradient(135deg, hsl(38 92% 55%) 0%, hsl(28 95% 50%) 100%)",
-                  }}
-                >
-                  Para Tus Cultos
-                </span>
-              </h1>
-            </div>
-
-            {/* Benefits */}
-            <div className="space-y-3 mb-8">
-              {[
-                "Planificador semanal de cultos",
-                "Guías de adoración para líderes",
-                "Plantillas de orden del culto",
-                "Banco de ideas para predicaciones",
-                "Material visual para proyección",
-              ].map((item, i) => (
-                <div
-                  key={i}
-                  className="flex items-center gap-3 text-white/80 text-sm"
-                >
-                  <div className="w-5 h-5 rounded-full bg-emerald-500/20 flex items-center justify-center flex-shrink-0">
-                    <Check className="w-3 h-3 text-emerald-400" />
-                  </div>
-                  {item}
-                </div>
-              ))}
-            </div>
-
-            {/* Price */}
-            <div className="text-center mb-6">
-              <p className="text-white/40 text-sm line-through mb-1">$97</p>
-              <div className="flex items-baseline justify-center gap-1">
-                <span className="text-white/60 text-lg font-medium">Solo</span>
-                <span className="text-4xl font-black text-white">$27</span>
-              </div>
-              <p className="text-white/40 text-xs mt-1">Pago único · Acceso inmediato</p>
-            </div>
-
-            {/* CTA button */}
-            <a
-              href="#"
-              className="group relative block w-full py-4 px-6 text-center font-bold text-white text-lg rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 hover:shadow-[0_20px_60px_-15px_hsl(142_76%_36%/0.5)] animate-btn-bounce"
-              style={{
-                background:
-                  "linear-gradient(135deg, hsl(142 76% 36%) 0%, hsl(142 70% 30%) 100%)",
-              }}
-            >
-              <span className="relative z-10">
-                SÍ, QUIERO EL KIT – $27
-              </span>
-              <div
-                className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                style={{
-                  background:
-                    "linear-gradient(135deg, hsl(142 76% 42%) 0%, hsl(142 70% 36%) 100%)",
-                }}
-              />
-            </a>
-
-            {/* Security */}
-            <div className="flex items-center justify-center gap-2 mt-4 text-white/30 text-xs">
-              <ShieldCheck className="w-4 h-4" />
-              Pago 100% seguro · Garantía de 7 días
-            </div>
+        {/* Security badges */}
+        <div className="flex items-center justify-center gap-5 mt-4 mb-6">
+          <div className="flex items-center gap-1.5 text-gray-400 text-xs">
+            <Lock className="w-3.5 h-3.5" />
+            <span>Compra Segura</span>
+          </div>
+          <div className="flex items-center gap-1.5 text-gray-400 text-xs">
+            <ShieldCheck className="w-3.5 h-3.5" />
+            <span>Garantía 7 días</span>
           </div>
         </div>
 
-        {/* No thanks link */}
+        {/* Separator */}
+        <div className="w-full h-px bg-gray-100 mb-5" />
+
+        {/* No thanks */}
         <div className="text-center">
           <a
             href="#"
-            className="text-white/30 text-xs underline underline-offset-4 hover:text-white/50 transition-colors duration-200"
+            className="text-gray-400 text-xs hover:text-gray-500 transition-colors duration-200"
           >
-            No, gracias. Quiero continuar sin el kit.
+            No, gracias. Quiero continuar sin el kit →
           </a>
         </div>
       </div>
