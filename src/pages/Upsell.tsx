@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Check, Clock, ShieldCheck, Zap, Lock } from "lucide-react";
+import { Check, Clock } from "lucide-react";
 import kitImage from "@/assets/kit-cultos.jpg";
 
 const Upsell = () => {
@@ -29,6 +29,23 @@ const Upsell = () => {
     return () => clearInterval(timer);
   }, []);
 
+  // Load Hotmart Sales Funnel Widget
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://checkout.hotmart.com/lib/hotmart-checkout-elements.js";
+    script.async = true;
+    script.onload = () => {
+      if ((window as any).checkoutElements) {
+        (window as any).checkoutElements.init('salesFunnel').mount('#hotmart-sales-funnel');
+      }
+    };
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <main className="min-h-screen bg-white">
       {/* Top bar - wait / confirmed */}
@@ -45,7 +62,7 @@ const Upsell = () => {
       </div>
 
       <div
-        className={`max-w-md mx-auto px-4 py-8 transition-all duration-700 ease-out ${
+        className={`max-w-2xl mx-auto px-6 py-8 transition-all duration-700 ease-out ${
           show ? "opacity-100 translate-y-0" : "opacity-0 translate-y-6"
         }`}
       >
@@ -54,7 +71,7 @@ const Upsell = () => {
           <p className="text-amber-600 text-xs font-bold uppercase tracking-widest mb-2">
             Oferta exclusiva de una sola vez
           </p>
-          <h1 className="text-2xl md:text-3xl font-black text-gray-900 leading-tight">
+          <h1 className="text-3xl md:text-5xl font-black text-gray-900 leading-tight">
             Agrega el{" "}
             <span
               className="bg-clip-text text-transparent"
@@ -151,61 +168,8 @@ const Upsell = () => {
           </p>
         </div>
 
-        {/* CTA Button */}
-        <a
-          href="#"
-          className="group relative block w-full py-5 px-6 text-center font-black text-white text-lg rounded-2xl overflow-hidden transition-all duration-300 hover:-translate-y-1 animate-btn-bounce"
-          style={{
-            background:
-              "linear-gradient(135deg, hsl(142 76% 36%) 0%, hsl(142 70% 28%) 100%)",
-            boxShadow: "0 10px 40px -10px hsl(142 76% 36% / 0.5)",
-          }}
-          onMouseEnter={(e) => {
-            (e.currentTarget as HTMLElement).style.boxShadow =
-              "0 16px 50px -10px hsl(142 76% 36% / 0.6)";
-          }}
-          onMouseLeave={(e) => {
-            (e.currentTarget as HTMLElement).style.boxShadow =
-              "0 10px 40px -10px hsl(142 76% 36% / 0.5)";
-          }}
-        >
-          <span className="relative z-10 flex items-center justify-center gap-2">
-            <Zap className="w-5 h-5" />
-            SÍ, AGREGAR EL KIT – $27
-          </span>
-          <div
-            className="absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-            style={{
-              background:
-                "linear-gradient(135deg, hsl(142 76% 40%) 0%, hsl(142 70% 32%) 100%)",
-            }}
-          />
-        </a>
-
-        {/* Security badges */}
-        <div className="flex items-center justify-center gap-5 mt-4 mb-6">
-          <div className="flex items-center gap-1.5 text-gray-400 text-xs">
-            <Lock className="w-3.5 h-3.5" />
-            <span>Compra Segura</span>
-          </div>
-          <div className="flex items-center gap-1.5 text-gray-400 text-xs">
-            <ShieldCheck className="w-3.5 h-3.5" />
-            <span>Garantía 7 días</span>
-          </div>
-        </div>
-
-        {/* Separator */}
-        <div className="w-full h-px bg-gray-100 mb-5" />
-
-        {/* No thanks */}
-        <div className="text-center">
-          <a
-            href="#"
-            className="text-gray-400 text-xs hover:text-gray-500 transition-colors duration-200"
-          >
-            No, gracias. Quiero continuar sin el kit →
-          </a>
-        </div>
+        {/* Hotmart Sales Funnel Widget */}
+        <div id="hotmart-sales-funnel" className="mb-6" />
       </div>
     </main>
   );
