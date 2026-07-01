@@ -50,7 +50,7 @@ const CountdownTimer = ({ variant = "badge" }: CountdownTimerProps) => {
     return (
       <div className="inline-flex items-center gap-2 bg-red-600 text-white px-4 py-2 rounded-full text-sm font-bold animate-pulse">
         <Clock className="w-4 h-4" />
-        <span>¡Promoción válida solo hoy {currentDate}!</span>
+        <span>OFERTA LIMITADA — ACCESO INMEDIATO</span>
       </div>
     );
   }
