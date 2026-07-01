@@ -64,7 +64,7 @@ const CountdownTimer = ({ variant = "badge" }: CountdownTimerProps) => {
         </span>
       </div>
 
-      {/* Title */}
+      {/* Titlae */}
       <h3 className="text-center text-xl font-black text-foreground mb-2">
         Promoción válida solo hoy
       </h3>
