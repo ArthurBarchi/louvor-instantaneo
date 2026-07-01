@@ -4,8 +4,12 @@ import CountdownTimer from "./CountdownTimer";
 
 const HeroSection = () => {
   return (
-    <section className="relative bg-background pt-8 pb-12 px-4 overflow-hidden">
+    <section className="relative bg-background pb-12 px-4 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent pointer-events-none" />
+
+      <div className="bg-primary text-white text-center py-3 px-4 text-sm font-normal leading-relaxed -mx-4 mb-6">
+        DEJA de perder tiempo buscando playbacks malos en YouTube o gastando en CDs. Descárgalos AL INSTANTE y úsalos en tu iglesia, USB o donde quieras. FÁCIL y RÁPIDO.
+      </div>
       
       <div className="container max-w-lg mx-auto relative">
         <div className="text-center mb-6">
