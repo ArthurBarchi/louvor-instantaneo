@@ -189,3 +189,16 @@
   background-size: 200% 100%;
   animation: shimmer 2s infinite;
 }
+
+@keyframes btn-bounce {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+.animate-btn-bounce {
+  animation: btn-bounce 2s ease-in-out infinite;
+}

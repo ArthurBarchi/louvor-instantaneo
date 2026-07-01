@@ -46,7 +46,7 @@ const HeroSection = () => {
         <div className="mb-6">
           <a 
             href="#pricing" 
-            className="block w-full py-4 px-8 text-center font-bold text-white text-lg bg-success rounded-xl hover:bg-success/90 transition-all duration-300 shadow-[0_10px_40px_-10px_hsl(142_76%_36%/0.5)] hover:shadow-[0_14px_50px_-10px_hsl(142_76%_36%/0.6)] hover:-translate-y-1 animate-[pulse_2s_ease-in-out_infinite]"
+            className="block w-full py-4 px-8 text-center font-bold text-white text-lg bg-success rounded-xl hover:bg-success/90 transition-all duration-300 shadow-[0_10px_40px_-10px_hsl(142_76%_36%/0.5)] hover:shadow-[0_14px_50px_-10px_hsl(142_76%_36%/0.6)] hover:-translate-y-1 animate-btn-bounce"
           >
             SÍ, ¡LO QUIERO AHORA!
           </a>
