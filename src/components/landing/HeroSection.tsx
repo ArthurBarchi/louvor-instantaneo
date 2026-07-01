@@ -7,8 +7,8 @@ const HeroSection = () => {
     <section className="relative bg-background pb-12 px-4 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-b from-primary/5 to-transparent pointer-events-none" />
 
-      <div className="text-white text-center py-2.5 px-4 text-xs font-bold uppercase tracking-wider -mx-4 mb-6" style={{ background: 'var(--gradient-primary)' }}>
-        DESCUENTO EXCLUSIVO SOLO HOY • 01/07/2026
+      <div className="text-white text-center py-4 px-4 text-sm md:text-base font-bold uppercase tracking-wider -mx-4 mb-6" style={{ background: 'var(--gradient-primary)' }}>
+        DESCUENTO EXCLUSIVO SOLO HOY • {new Date().toLocaleDateString('es-ES', { day: '2-digit', month: '2-digit', year: 'numeric' })}
       </div>
       
       <div className="container max-w-lg mx-auto relative">
@@ -17,7 +17,7 @@ const HeroSection = () => {
             <CountdownTimer variant="badge" />
           </div>
 
-          <h1 className="text-5xl md:text-7xl font-black text-foreground leading-tight mb-2">
+          <h1 className="text-3xl md:text-5xl font-black text-foreground leading-tight mb-2">
             1.500 Playbacks Para
             <br />
             <span className="text-gradient">Alabar En Tu Iglesia</span>
