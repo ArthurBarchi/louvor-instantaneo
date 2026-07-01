@@ -9,15 +9,15 @@ const HeroSection = () => {
       
       <div className="container max-w-lg mx-auto relative">
         <div className="text-center mb-6">
-          <h1 className="text-4xl md:text-6xl font-black text-foreground leading-tight mb-2">
+          <div className="mb-3">
+            <CountdownTimer variant="badge" />
+          </div>
+
+          <h1 className="text-5xl md:text-7xl font-black text-foreground leading-tight mb-2">
             1.500 Playbacks Para
             <br />
             <span className="text-gradient">Alabar En Tu Iglesia</span>
           </h1>
-          
-          <div className="mt-4">
-            <CountdownTimer variant="badge" />
-          </div>
         </div>
 
         <div className="mb-6 animate-fade-in">
