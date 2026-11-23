@@ -13,8 +13,8 @@ Página de vendas em espanhol (América Latina) + páginas do funil da Hotmart. 
 
 ## Onde mexer
 
-- **Checkout:** atributo `data-checkout` dos botões em `index.html` (links `pay.hotmart.com`). O `js/app.js` repassa as UTMs da URL para o checkout.
-- **Preços:** procurar por `US$` em `index.html`. O valor cobrado é o da oferta configurada na Hotmart; os dois precisam bater.
+- **Checkout (Cakto, em USD):** atributo `data-checkout` dos botões em `index.html` — Básico `pay.cakto.com.br/38yugnu_1361629`, Completo `pay.cakto.com.br/3cdei5b`. O `js/app.js` repassa as UTMs da URL para o checkout.
+- **Preços:** procurar por `US$` em `index.html`. O valor cobrado é o da oferta configurada na Cakto; os dois precisam bater.
 - **Perguntas frequentes:** lista `window.PB_FAQ` no fim de `index.html`.
 - **Pixel/UTMs:** scripts da Utmizey no `<head>` de cada página.
 - **Imagens:** pasta `img/` (mesmos nomes e tamanhos ao trocar).
