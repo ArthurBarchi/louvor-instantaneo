@@ -1,73 +1,26 @@
-# Welcome to your Lovable project
+# Pistas Cristianas · Latam (Estudio Alabanza)
 
-## Project info
+Página de vendas em espanhol (América Latina) + páginas do funil da Hotmart. Site estático: HTML, CSS e JS puros, sem build.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+## Páginas
 
-## How can I edit this code?
+| Endereço | Arquivo | O que é |
+|---|---|---|
+| `/` | `index.html` | Página de vendas (Básico US$ 9.90 · Completo US$ 19.90) |
+| `/upsell` | `upsell.html` | Oferta pós-compra (Kit Completo para Cultos, $27) com o widget de funil da Hotmart |
+| `/downsell` | `downsell.html` | Oferta de última chance ($17) com o widget de funil da Hotmart |
+| `/obrigado` | `obrigado.html` | Página de obrigado |
 
-There are several ways of editing your application.
+## Onde mexer
 
-**Use Lovable**
+- **Checkout:** atributo `data-checkout` dos botões em `index.html` (links `pay.hotmart.com`). O `js/app.js` repassa as UTMs da URL para o checkout.
+- **Preços:** procurar por `US$` em `index.html`. O valor cobrado é o da oferta configurada na Hotmart; os dois precisam bater.
+- **Perguntas frequentes:** lista `window.PB_FAQ` no fim de `index.html`.
+- **Pixel/UTMs:** scripts da Utmizey no `<head>` de cada página.
+- **Imagens:** pasta `img/` (mesmos nomes e tamanhos ao trocar).
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+## Publicação
 
-Changes made via Lovable will be committed automatically to this repo.
+O `vercel.json` publica a pasta como site estático, com URLs sem `.html` (`/upsell`, `/downsell`, `/obrigado`).
 
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
-## How can I deploy this project?
-
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Para ver no computador: `python -m http.server` nesta pasta e abrir `http://localhost:8000`.

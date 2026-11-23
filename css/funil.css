@@ -1,0 +1,90 @@
+/* Páginas do funil (upsell, downsell, obrigado): versão estática das antigas páginas em React */
+* { box-sizing: border-box; }
+body { margin: 0; background: #fff; color: #111827; font-family: "Inter", -apple-system, "Segoe UI", Roboto, Arial, sans-serif; -webkit-font-smoothing: antialiased; }
+img { display: block; max-width: 100%; }
+svg { flex: none; }
+
+.barra { display: flex; align-items: center; justify-content: center; gap: .5rem; padding: .75rem 1rem; text-align: center; color: #fff; font-size: .875rem; font-weight: 700; letter-spacing: .025em; background: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 70% 30%)); }
+.barra svg { width: 1rem; height: 1rem; }
+.barra-urgente { font-weight: 900; text-transform: uppercase; background: linear-gradient(135deg, hsl(0 80% 45%), hsl(0 85% 38%)); animation: piscar 2s cubic-bezier(.4, 0, .6, 1) infinite; }
+
+.conteudo { max-width: 42rem; margin: 0 auto; padding: 2rem 1.5rem; animation: entrar .7s ease-out both; }
+.conteudo.largo { padding-top: 3rem; padding-bottom: 3rem; }
+@keyframes entrar { from { opacity: 0; transform: translateY(1.5rem); } to { opacity: 1; transform: none; } }
+@keyframes piscar { 50% { opacity: .5; } }
+
+.topo { text-align: center; margin-bottom: 1.5rem; }
+.pre { margin: 0 0 .5rem; font-size: .75rem; font-weight: 700; letter-spacing: .1em; text-transform: uppercase; color: #d97706; }
+h1 { margin: 0; font-size: 1.875rem; font-weight: 900; line-height: 1.15; color: #111827; }
+@media (min-width: 768px) { h1 { font-size: 3rem; } }
+.grad { background-image: linear-gradient(135deg, hsl(38 92% 50%), hsl(28 95% 45%)); -webkit-background-clip: text; background-clip: text; color: transparent; }
+.sub { margin: .5rem 0 0; font-size: .875rem; color: #6b7280; }
+.sub-maior { margin: .75rem 0 0; font-size: 1rem; color: #6b7280; }
+.sub-maior strong { color: #1f2937; }
+
+.selo-recusa { display: inline-flex; align-items: center; gap: .5rem; margin-bottom: .75rem; padding: .5rem 1rem; border-radius: 999px; font-size: .75rem; font-weight: 900; letter-spacing: .1em; text-transform: uppercase; color: #dc2626; background: hsl(0 80% 96%); border: 1px solid hsl(0 70% 88%); }
+.selo-recusa svg { width: .875rem; height: .875rem; }
+
+.kit { width: 100%; margin-bottom: 1.5rem; border-radius: 1rem; box-shadow: 0 10px 15px -3px rgb(0 0 0 / .1), 0 4px 6px -4px rgb(0 0 0 / .1); }
+
+.timer { display: flex; align-items: center; justify-content: center; gap: .5rem; margin-bottom: 1.5rem; padding: .75rem 1rem; border-radius: .75rem; font-size: .875rem; font-weight: 600; color: #92400e; background: linear-gradient(135deg, hsl(0 0% 97%), hsl(38 50% 96%)); border: 1px solid hsl(38 80% 85%); transition: all .3s; }
+.timer svg { width: 1rem; height: 1rem; color: #d97706; }
+.timer b { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-weight: 900; color: #d97706; }
+.timer-grande { gap: .75rem; padding: 1rem 1.25rem; font-weight: 700; }
+.timer-grande svg { width: 1.25rem; height: 1.25rem; }
+.timer-grande b { font-size: 1.125rem; }
+.timer .alerta { display: none; }
+.timer.expirando { color: #991b1b; background: linear-gradient(135deg, hsl(0 80% 97%), hsl(0 60% 95%)); border: 2px solid hsl(0 70% 70%); animation: piscar 2s cubic-bezier(.4, 0, .6, 1) infinite; }
+.timer.expirando svg, .timer.expirando b { color: #dc2626; }
+.timer.expirando .alerta { display: inline; }
+
+.beneficios { list-style: none; margin: 0 0 1.5rem; padding: 0; display: grid; gap: .75rem; }
+.beneficios li { display: flex; align-items: flex-start; gap: .75rem; font-size: .875rem; line-height: 1.375; color: #374151; }
+.ck { display: flex; align-items: center; justify-content: center; width: 1.25rem; height: 1.25rem; margin-top: .125rem; border-radius: 999px; color: #fff; background: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 70% 30%)); }
+.ck svg { width: .75rem; height: .75rem; }
+
+.preco { position: relative; overflow: hidden; margin-bottom: 1.5rem; padding: 1.5rem; border-radius: 1rem; text-align: center; background: linear-gradient(135deg, hsl(220 20% 97%), hsl(220 15% 95%)); border: 1px solid hsl(220 15% 90%); }
+.preco-forte { background: linear-gradient(135deg, hsl(0 0% 98%), hsl(38 30% 96%)); border: 2px solid hsl(38 80% 75%); }
+.preco .rot { margin: 0 0 .25rem; font-size: .75rem; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: #9ca3af; }
+.preco .riscado { margin: 0 0 .5rem; font-size: 1.5rem; font-weight: 700; color: #d1d5db; text-decoration: line-through; }
+.preco-forte .riscado { margin: 0; font-size: 1.25rem; }
+.preco .riscado2 { margin: 0 0 .5rem; font-size: 1.125rem; font-weight: 700; color: #f87171; text-decoration: line-through; }
+.preco .hoje { margin: 0 0 .25rem; font-size: 1.125rem; color: #6b7280; }
+.preco .valor { margin: 0 0 .25rem; font-size: 3rem; font-weight: 900; line-height: 1; color: #111827; }
+.preco-forte .valor { font-size: 3.75rem; }
+.preco .extra { margin: 0; font-size: .75rem; font-weight: 700; letter-spacing: .05em; text-transform: uppercase; color: #ef4444; }
+.preco .letra { margin: .5rem 0 0; font-size: .75rem; color: #9ca3af; }
+.fita { position: absolute; top: .75rem; right: -2rem; padding: .25rem 2.5rem; transform: rotate(45deg); font-size: 10px; font-weight: 900; letter-spacing: .05em; text-transform: uppercase; color: #fff; background: linear-gradient(135deg, hsl(0 80% 45%), hsl(0 85% 38%)); }
+
+.escassez { margin-bottom: 1.5rem; padding: .75rem 1rem; border-radius: .5rem; text-align: center; font-size: .75rem; font-weight: 700; color: #b91c1c; background: hsl(0 80% 97%); border: 1px solid hsl(0 60% 90%); }
+
+#hotmart-sales-funnel { margin-bottom: 1.5rem; }
+
+/* obrigado */
+.ok { display: flex; justify-content: center; margin-bottom: 1.5rem; }
+.ok span { display: flex; align-items: center; justify-content: center; width: 6rem; height: 6rem; border-radius: 999px; color: #fff; background: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 70% 30%)); box-shadow: 0 15px 40px -10px hsl(142 76% 36% / .4); animation: surgir .5s ease-out .5s both; }
+.ok svg { width: 3rem; height: 3rem; }
+@keyframes surgir { from { opacity: 0; transform: scale(.5); } to { opacity: 1; transform: scale(1); } }
+.topo-ok { text-align: center; margin-bottom: 2rem; }
+.topo-ok h1 { margin-bottom: .75rem; }
+.topo-ok p { margin: 0; font-size: 1rem; color: #6b7280; }
+@media (min-width: 768px) { .topo-ok p { font-size: 1.125rem; } }
+.cartao { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.5rem; padding: 1.5rem; border-radius: 1rem; background: linear-gradient(135deg, hsl(220 20% 97%), hsl(220 15% 95%)); border: 1px solid hsl(220 15% 90%); }
+@media (min-width: 768px) { .cartao { padding: 2rem; } }
+.cartao-ico { display: flex; align-items: center; justify-content: center; width: 3rem; height: 3rem; border-radius: .75rem; color: #fff; background: linear-gradient(135deg, hsl(38 92% 50%), hsl(28 95% 45%)); }
+.cartao-ico svg { width: 1.5rem; height: 1.5rem; }
+.cartao h2 { margin: 0 0 .25rem; font-size: 1.125rem; font-weight: 900; color: #111827; }
+.cartao p { margin: 0; font-size: .875rem; line-height: 1.625; color: #6b7280; }
+.cartao strong { color: #374151; }
+.passos { list-style: none; margin: 0 0 2rem; padding: 0; display: grid; gap: 1rem; }
+.passos li { display: flex; align-items: flex-start; gap: 1rem; padding: 1rem; border-radius: .75rem; background: #fff; border: 1px solid hsl(220 15% 92%); }
+.passos .n { display: flex; align-items: center; justify-content: center; flex: none; width: 2rem; height: 2rem; border-radius: 999px; color: #fff; font-size: .875rem; font-weight: 900; background: linear-gradient(135deg, hsl(142 76% 36%), hsl(142 70% 30%)); }
+.passos h3 { margin: 0; font-size: .875rem; font-weight: 700; color: #111827; }
+.passos p { margin: .125rem 0 0; font-size: .75rem; color: #6b7280; }
+.aviso-tempo { display: flex; align-items: center; justify-content: center; gap: .5rem; margin-bottom: 2rem; padding: .75rem 1rem; border-radius: .75rem; font-size: .875rem; font-weight: 600; color: #92400e; background: linear-gradient(135deg, hsl(38 50% 97%), hsl(38 40% 95%)); border: 1px solid hsl(38 60% 88%); }
+.aviso-tempo svg { width: 1rem; height: 1rem; color: #d97706; }
+.suporte { margin: 0; text-align: center; font-size: .75rem; color: #9ca3af; }
+
+@media (prefers-reduced-motion: reduce) {
+  .conteudo, .ok span, .barra-urgente, .timer.expirando { animation: none; }
+}
